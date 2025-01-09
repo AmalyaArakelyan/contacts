@@ -1,3 +1,37 @@
+# Running the Project
+To run the application in development mode, use the following command:
+
+ npm run dev
+
+This will start the React application and it should be accessible at http://localhost:5173.
+
+# Running the Server
+Used json-server to serve mock data, you can start the server with this command:
+
+npm run server
+
+Make sure your db/contacts.json file is configured properly in the root of your project for the server, typically as follows:
+
+- { "contacts": [{
+-        "id": 1,
+-        "name": "Leanne Graham",
+-        "username": "Bret",
+-        "photo": "https://example.com/photo1.jpg",
+-        "description": "Example description one."
+-    } ]}
+
+
+# API Endpoints
+- GET /contacts: Retrieve the list of users.
+- GET /contacts/:id: Retrieve user details by ID.
+- POST /contacts: Create a new user.
+- PUT /contacts/:id: Update an existing user.
+- DELETE /contacts/:id: Delete a user.
+
+
+endpoint  http://localhost:3001  for json server.
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
