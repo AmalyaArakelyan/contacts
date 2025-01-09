@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    // other options...
+    "jsx": "react-jsx",
+    "allowJs": true, // This allows JavaScript files to be compiled
+    "checkJs": true // This enables type checking on JavaScript files
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
